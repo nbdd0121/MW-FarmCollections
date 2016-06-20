@@ -1,0 +1,52 @@
+{
+	"name": "FarmCollections/GlobalUserGroups",
+	"version": "0.0.1",
+	"author": [
+		"Gary Guo"
+	],
+	"license-name": "BSD-2-Clause",
+	"url": "https://github.com/nbdd0121/MW-FarmCollections/tree/master/GlobalUserGroups",
+	"descriptionmsg": "globaluserrights-desc",
+	"type": "specialpage",
+	"SpecialPages": {
+		"Userrights": "FarmColle\\GUR\\UserrightsPage",
+		"GlobalUserrights": "FarmColle\\GUR\\GlobalUserrightsPage",
+		"Listusers": "FarmColle\\GUR\\SpecialListusers"
+	},
+	"MessagesDirs": {
+		"FarmCollections/GlobalUserrights": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"GlobalUserrightsAlias": "GlobalUserrights.alias.php"
+	},
+	"AutoloadClasses": {
+		"FarmColle\\GUR\\Utils": "includes/Utils.php",
+		"FarmColle\\GUR\\UserrightsPage": "includes/UserrightsPage.php",
+		"FarmColle\\GUR\\GlobalUserrightsPage": "includes/GlobalUserrightsPage.php",
+		"FarmColle\\GUR\\SpecialListusers": "includes/SpecialListusers.php",
+		"FarmColle\\GUR\\Hooks": "includes/Hooks.php"
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": [
+			"FarmColle\\GUR\\Hooks::onLoadExtensionSchemaUpdates"
+		],
+		"UserEffectiveGroups": [
+			"FarmColle\\GUR\\Hooks::onUserEffectiveGroups"
+		],
+		"SpecialListusersQueryInfo": [
+			"FarmColle\\GUR\\Hooks::onSpecialListusersQueryInfo"
+		]
+	},
+	"LogTypes": [
+		"gblrights"
+	],
+	"LogActionsHandlers": {
+		"gblrights/rights": "RightsLogFormatter"
+	},
+	"AvailableRights": [
+		"globaluserrights"
+	],
+	"manifest_version": 1
+}

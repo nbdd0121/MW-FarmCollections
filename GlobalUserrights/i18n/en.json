@@ -1,0 +1,8 @@
+{
+	"globaluserrights": "Global user rights management",
+	"globaluserrights-desc": "Provide [[Special:GlobalUserrights|global user rights]] management feature to wiki farms",
+	"log-name-gblrights": "Global rights log",
+	"log-description-gblrights": "This is a log of changes to global user rights.",
+	"logentry-gblrights-rights": "$1 changed global group membership for $3 from $4 to $5",
+	"right-globaluserrights": "Edit global user rights"
+}

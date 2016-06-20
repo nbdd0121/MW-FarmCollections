@@ -1,0 +1,8 @@
+{
+	"globaluserrights": "全域用户权限管理",
+	"globaluserrights-desc": "为Wiki农场提供[[Special:GlobalUserrights|全域用户权限]]管理功能。",
+	"log-name-gblrights": "全域权限日志",
+	"log-description-gblrights": "这是更改全域用户权限的日志。",
+	"logentry-gblrights-rights": "$1更改$3的全域用户组自$4至$5",
+	"right-globaluserrights": "编辑全域用户权限"
+}
