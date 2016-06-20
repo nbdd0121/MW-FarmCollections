@@ -1,11 +1,11 @@
 {
-	"name": "FarmCollections/GlobalUserGroups",
+	"name": "FarmCollections/GlobalUserrights",
 	"version": "0.0.1",
 	"author": [
 		"Gary Guo"
 	],
 	"license-name": "BSD-2-Clause",
-	"url": "https://github.com/nbdd0121/MW-FarmCollections/tree/master/GlobalUserGroups",
+	"url": "https://github.com/nbdd0121/MW-FarmCollections/tree/master/GlobalUserrights",
 	"descriptionmsg": "globaluserrights-desc",
 	"type": "specialpage",
 	"SpecialPages": {
@@ -48,5 +48,8 @@
 	"AvailableRights": [
 		"globaluserrights"
 	],
+	"config": {
+		"GlobalGroups": []
+	},
 	"manifest_version": 1
 }
